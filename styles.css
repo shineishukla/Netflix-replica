@@ -16,17 +16,20 @@ body {
     flex-wrap: wrap;
     display: flex;
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 
 }
 
 .container::before{
     content: "";
     background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ce221d7a-8901-41d9-b726-3ea2efe3a650/2f69dcef-463f-44da-b3b9-662b65f33f82/IN-en-20230703-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-repeat: no-repeat;
     position: absolute;
     height: 100%;
     width: 100%;
     opacity: 0.3;
     z-index: -1;
+    box-sizing: border-box;
 }
 
 .logo h1{
@@ -89,7 +92,8 @@ body {
 }  
 
 .title{
-    padding: 70px 45px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 
@@ -176,6 +180,7 @@ body {
 
 
 .container1 {
+    border-top: 8px solid #333;
     width: 100%;
     min-height: 460px;
     background-color: black;
@@ -224,4 +229,78 @@ body {
   
 .text h1 {
     font-size: 3.125rem;
+}
+
+footer {
+    border-top: 8px solid #333;
+    border-width: 100%;
+    padding: 2rem 1rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 100%;
+    height: 350px;
+}
+
+.footer__row__1{
+    font-size: 40px;
+    font-weight: 400;
+    margin-left: 40px;
+}
+  
+.footer__row__2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    text-decoration: underline;
+    padding: 2px;
+    margin-left: 40px;
+}
+  
+.footer__row__1 > h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
+  
+.footer__row__3 > .language{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7px 10px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.footer__row__3 .language option{
+    background-color: rgb(255, 255, 255);
+} 
+
+.footer__row__3 button{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 7px 17px;
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+
+.footer__row__3 > .dropdown__container > .language__drop__down {
+    color: #757575;
+}
+
+.footer__row__3{
+    margin-left: 40px;
+}
+.footer__row__4{
+    margin-left: 40px;
 }
