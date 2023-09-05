@@ -16,7 +16,6 @@ body {
     flex-wrap: wrap;
     display: flex;
     font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
 
 }
 
@@ -92,8 +91,8 @@ body {
 }  
 
 .title{
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding: 70px 45px;
+
 }
 
 
@@ -180,7 +179,6 @@ body {
 
 
 .container1 {
-    border-top: 8px solid #333;
     width: 100%;
     min-height: 460px;
     background-color: black;
@@ -232,7 +230,7 @@ body {
 }
 
 footer {
-    border-top: 8px solid #333;
+    border-top: none;
     border-width: 100%;
     padding: 2rem 1rem;
     color: #ffffff;
@@ -248,7 +246,7 @@ footer {
     font-weight: 400;
     margin-left: 40px;
 }
-  
+
 .footer__row__2 {
     display: flex;
     flex-wrap: wrap;
@@ -258,12 +256,12 @@ footer {
     padding: 2px;
     margin-left: 40px;
 }
-  
+
 .footer__row__1 > h4 {
     font-size: 15px;
     font-weight: 500;
 }
-  
+
 .footer__row__3 > .language{
     margin: auto;
     align-items: center;
